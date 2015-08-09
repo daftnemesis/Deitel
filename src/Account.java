@@ -21,7 +21,7 @@ public class Account {
     //method that deposits only a valid amount to the balance
     public void deposit(double depositAmount){
         if (depositAmount > 0.0){
-            this.balance = balance;
+            balance = balance + depositAmount;
         }
     }
 
