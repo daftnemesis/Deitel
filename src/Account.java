@@ -37,4 +37,13 @@ public class Account {
     public String getName(){
         return name;
     }
+
+    public void withdraw(double amount){
+        if (balance - amount < 0.0){
+            System.out.println("Withdrawal exceed account balance");
+        }
+        else{
+            balance = balance - amount;
+        }
+    }
 }
