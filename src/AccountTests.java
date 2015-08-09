@@ -2,6 +2,8 @@
 //Uses the classes constructor to initialize the name instance
 //variable at the time each account object is created
 
+import java.util.Scanner;
+
 public class AccountTests {
 
     public static void main(String[] args){
