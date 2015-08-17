@@ -9,12 +9,12 @@ public class DrawPanelTest {
 
         DrawPanel panel = new DrawPanel();
 
-        JFrame aplication = new JFrame();
+        JFrame application = new JFrame();
 
-        aplication.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        aplication.add(panel);
-        aplication.setSize(250, 250);
-        aplication.setVisible(true);
+        application.add(panel);
+        application.setSize(250, 250);
+        application.setVisible(true);
     }
 }
