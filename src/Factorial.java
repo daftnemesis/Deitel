@@ -5,11 +5,13 @@ public class Factorial {
 
     public static void main(String[] args) {
 
-        System.out.printf("%d", factorial(6));
+        for (int i = 1; i <= 20; i++){
+            System.out.println("El factorial de " + i + " es " + factorial(i));
+        }
 
     }
 
-    public static int factorial(int n){
+    public static long factorial(long n){
         if (n == 1)
             return 1;
         else

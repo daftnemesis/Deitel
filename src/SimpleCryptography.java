@@ -98,5 +98,6 @@ public class SimpleCryptography {
 
 
         return uncovertedNumber;
+
     }
 }
