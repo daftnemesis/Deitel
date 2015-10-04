@@ -11,6 +11,10 @@ public class Factorial {
 
     }
 
+    public Factorial(){
+
+    }
+
     public static long factorial(long n){
         if (n == 1)
             return 1;
