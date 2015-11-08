@@ -1,5 +1,6 @@
 import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -10,8 +11,13 @@ public class TestClass{
 
         Scanner sc = new Scanner(System.in);
 
-        CAI test = new CAI();
+        long x = 10;
+        long res = x;
+        for (int i = 1; i < 9; i++) {
+            res = res * x;
+            System.out.println(res);
+        }
 
-        test.init();
+
     }
 }

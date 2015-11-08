@@ -1,39 +1,29 @@
-import java.util.Scanner;
-
 /**
- * Created by daftnemesis on 2/09/15.
+ * Bat chart printing program
  */
 public class BarChart {
 
     public static void main(String[] args) {
 
-        Scanner entrada = new Scanner(System.in);
+        int[] array = { 0, 0, 0, 0, 0, 0, 1, 2, 4, 2, 1 };
 
-        int v,w,x,y,z;
+        System.out.println("Grade distribution");
+        //for each array element, output a bar of the chart
+        for (int i = 0; i < array.length; i++){
+            //output bar label ("00-09: ", ..., "90-99"
+            if (i == 10)
+                System.out.printf("%5d: ", 100);
+            else
+                System.out.printf("%02d-%02d: ",
+                        i * 10, i * 10 + 9);
 
-        System.out.println("Introduce 5 números enteros entre el 1 al 30 separados por coma: ");
-        v = entrada.nextInt();
-        w = entrada.nextInt();
-        x = entrada.nextInt();
-        y = entrada.nextInt();
-        z = entrada.nextInt();
+            for (int stars = 0; stars < array[i]; stars++){
+                System.out.print("*");
 
-        printChart(v);
-        printChart(w);
-        printChart(x);
-        printChart(y);
-        printChart(z);
+            }
 
-
-    }
-
-    public static void printChart(int x){
-
-        for (int i = 0; i < x; i++){
-            System.out.print("*");
+            System.out.println();
         }
-
-        System.out.println();
 
     }
 }
